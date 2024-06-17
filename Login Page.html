@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 70%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .image-section {
+            flex: 1;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            width: 80%;
+            height: auto;
+        }
+
+        .login-section {
+            flex: 1;
+            padding: 40px;
+            background-color: #3b82f6;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .login-section p {
+            margin-bottom: 20px;
+        }
+
+        .login-section a {
+            color: #d1d5db;
+            text-decoration: none;
+        }
+
+        .login-section a:hover {
+            text-decoration: underline;
+        }
+
+        .login-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-section label {
+            margin-bottom: 5px;
+        }
+
+        .login-section input[type="text"],
+        .login-section input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .login-section .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .login-section button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2563eb;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-section button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="https://octopush.com/wp-content/uploads/2021/05/SEO-SMS-Marketing.png" alt="Illustration">
+
+        </div>
+        <div class="login-section">
+            <h2>Login Authentication</h2>
+            <p>A Web Development Task by <a href="#">Devtern</a></p>
+            <form action="login.php" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="remember"> Keep me logged in
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
